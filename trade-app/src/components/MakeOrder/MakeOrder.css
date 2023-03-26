@@ -1,0 +1,65 @@
+.order_form_container {
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.order_form_container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.order_form_container .order_form {
+  border-radius: 5px;
+  padding: 30px 20px;
+  width: 400px;
+  box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.15);
+}
+.order_form_container .order_form .form_item {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.order_form_container .order_form .form_item label,
+.order_form_container .order_form .target_amount label {
+ font-size: .9rem;
+ font-weight: 600;
+}
+.order_form_container .order_form .form_item select {
+  width: 100%;
+  padding: 7px 10px;
+  border: 0;
+  background: var(--blue);
+  color: white;
+  border-radius: 5px;
+}
+.order_form_container .order_form .form_item input {
+  padding: 7px 10px;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 5px;
+}
+.order_form_container .order_form .form_item input:focus {
+  border: 1px solid var(--blue);
+}
+.order_form_container .order_form .target_amount p {
+  font-size: .9rem;
+  margin-top: 5px;
+  font-family: monospace;
+}
+.order_form_container .order_form button {
+  border: 0;
+  padding: 7px 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--blue);
+  color: white;
+  margin-top: 20px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px 2px var(--trans-blue);
+}
