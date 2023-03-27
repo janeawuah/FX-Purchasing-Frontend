@@ -3,6 +3,7 @@ import RatesTable from "../RatesTable/RatesTable";
 import "./Dashboard.css";
 import MakeOrder from "../MakeOrder/MakeOrder";
 import CreateAccount from "../CreateAccount/CreateAccount";
+import CreateTrader from "../CreateTrader/CreateTrader";
 
 const Dashboard = () => {
     const rates_data = [
@@ -51,6 +52,10 @@ const Dashboard = () => {
                 return (
                     <CreateAccount rates_data={rates_data} />
                 )
+            case "Create&nbsp;Trader":
+                return (
+                     <CreateTrader/>
+                )
         }
     }
 
@@ -58,8 +63,10 @@ const Dashboard = () => {
         <div className="main_container">
             <div className="button_container">
                 <button onClick={onMenuSelected}>Rates</button>
+                <button onClick={onMenuSelected}>Create&nbsp;Trader</button>
                 <button onClick={onMenuSelected}>Create&nbsp;Account</button>
                 <button onClick={onMenuSelected}>Place&nbsp;Order</button>
+
             </div>
             {
                 renderView()

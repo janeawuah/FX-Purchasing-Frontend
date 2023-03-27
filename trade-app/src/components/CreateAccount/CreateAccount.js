@@ -10,6 +10,8 @@ function CreateAccount (props) {
         console.log(account_balance);
     }
 
+    const url = ""
+
     return (
         <div className="account_form_container">
             <h2>Create Account</h2>

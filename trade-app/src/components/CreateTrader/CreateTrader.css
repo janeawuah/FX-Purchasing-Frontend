@@ -1,0 +1,74 @@
+.trader_form_container{
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.trader_form_container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.trader_form_container .trader_form 
+{
+    border-radius: 5px;
+    padding: 30px 20px;
+    width: 400px;
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+.trader_form_container .trader_form input 
+{
+    padding: 7px 10px;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 5px;
+  }
+
+
+.trader_form_container .trader_form 
+  {
+    border-radius: 5px;
+    padding: 30px 20px;
+    width: 400px;
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.15);
+    border: 1px solid white;
+  }
+
+
+.trader_form_container .trader_form
+{
+    font-size: .9rem;
+    margin-top: 5px;
+    /* font-family: monospace; */
+  }
+
+.trader_form_container .trader_form label
+{
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+  .trader_form_container .trader_form button
+{
+    border: 0;
+    padding: 7px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--blue);
+    color: white;
+    margin-top: 20px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px 2px var(--trans-blue);
+  }
+

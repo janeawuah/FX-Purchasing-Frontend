@@ -6,6 +6,7 @@ import Signup from './components/SignUp/Signup';
 import Dashboard from "./components/Dashboard/Dashboard";
 import RatesTable  from "./components/RatesTable/RatesTable";
 import MakeOrder from "./components/MakeOrder/MakeOrder";
+import CreateTrader from "./components/CreateTrader/CreateTrader";
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
@@ -18,14 +19,18 @@ function App() {
 
   return (
 
-    // <div className="App">
-    //   {
-    //     currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Signup onFormSwitch={toggleForm} />
+    <div className="App">
+      {
+        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Dashboard onFormSwitch={toggleForm} />
     
-    //   }
-    // </div>
-    <Dashboard/>
+      }
+    </div>
+    // <Dashboard/>
     // <MakeOrder/>
+    // <div>
+    //   <CreateTrader/>
+    // </div>
+
   );
 }
 
